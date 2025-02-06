@@ -14,6 +14,7 @@
     padding: 0;
     outline: none;
     border: none;
+    box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
@@ -75,7 +76,7 @@ section {
 
 
 header {
-    position: fixed;
+    
     top: 0;
     left: 0;
     right: 0;
@@ -317,4 +318,188 @@ header section {
 }
 .address-boxwhite p {
     font-size: 1.5rem;
+}
+@media  screen and (min-width:360px) and (max-width: 430px) {
+    
+    header {
+        max-width: 430px;
+        width: 100%;
+    }
+    body {
+        max-width: 430px;
+        min-width: 360px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        max-width: 430px;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+    .home-container {
+        max-width: 430px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .home-container section {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+    .home-container section .content {
+        max-width: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container section .content h3 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .home-container section .form-container {
+        max-width: 430px;
+        width: 90%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .home-container section .form-container form {
+        max-width: 430px;
+        width: 100%;
+    }
+    .home-container section .form-container form input {
+        width: 80%;
+    }
+    form .btn {
+        width: 80%;
+        font-size: 1.35rem;
+    }
+    .about {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        width: 100%;
+    }
+    .row .container-image {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .row .container-image img {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .box-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+        align-items: center;
+    }
+    .menu .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .quote {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .user {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .review .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 430px;
+        width: 100%;
+    }
+    .review .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .address {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .address-boxwhite {
+        min-width: 300px;
+        max-width: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-boxwhite .btn {
+        width: 80%;
+        text-align: center;
+    }
+    footer {
+        max-width: 430px;
+        width: 100%;
+    }
+    .share {
+        max-width: 430px;
+        width: 100%;
+        
+    }
+    .share a {
+        width: 100%;
+    }
+    .share a img {
+        width: 60px;
+        height: 60px;
+    }
+   
 }
