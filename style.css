@@ -319,6 +319,41 @@ header section {
 .address-boxwhite p {
     font-size: 1.5rem;
 }
+.btn-whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+   
+}
+.btn-whatsapp   img{
+    max-width: 74px;
+    transition: 0.4s;
+}
+.btn-whatsapp img:hover{
+    transform: scale(1.1);
+}
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -134px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+    
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
 @media  screen and (min-width:360px) and (max-width: 430px) {
     
     header {
@@ -456,6 +491,8 @@ header section {
         max-width: 90%;
         display: flex;
         flex-direction: column;
+        text-align: justify;
+        align-items: center;
     }
     .address {
         display: flex;
