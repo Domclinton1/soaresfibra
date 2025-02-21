@@ -69,11 +69,7 @@
                 <a href="#review">Avaliações</a>
                 <a href="#address">Cobertura</a>
             </nav>
-            <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios/30/ff3131/whatsapp.png" alt="search--v1"/>
-    
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ff3131/wifi.png" alt="shopping-cart"/>
-            </div>
+            <a class="btn" href="#menu">Ver Planos de Internet</a>
         </section>
 
     </header>
@@ -92,7 +88,10 @@
                 <form id="whatsapp-form">
                   <label for="name">Seu Nome:</label>
                   <input type="text" id="name" placeholder="Digite seu nome" required>
-              
+                  
+                  <label for="cep">CEP:</label>
+                  <input type="number" id="cep" placeholder="Insira Seu CEP" required>
+
                   <label for="region">Sua Região:</label>
                   <select id="region" required>
                     <option value="" disabled selected>Selecione sua região</option>
@@ -101,10 +100,9 @@
                     <option value="sete-lagoas">Sete Lagoas</option>
                   </select>
               
-                  <label for="message">Mensagem:</label>
-                  <textarea id="message" placeholder="Digite sua mensagem" rows="4" required></textarea>
+                 
               
-                  <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+                  <button class="btn" type="submit">Enviar pelo WhatsApp <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></button>
                 </form>
               </div>
         </section>
@@ -134,7 +132,8 @@
 
                 <span>🔒 Segurança Garantida</span>
                 <p>Navegue com tranquilidade! Oferecemos tecnologia de ponta para manter sua conexão segura.</p>
-                <a href="#" class="btn">Fale Conosco</a>
+                <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet...
+                " target="_blank" class="btn">Fale Conosco ></a>
             </div>
         </div>
     </section>
@@ -181,39 +180,76 @@
         <div class="carousel">
             <div class="review-wrapper" id="reviewWrapper">
                 <div class="review">
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Lucas Ferreira" class="profile-img">
-                    <h3>Lucas Ferreira</h3>
-                    <div class="stars">★★★★★</div>
-                    <p class="comment">"Internet muito rápida e estável! Suporte excelente."</p>
+                    
+                    <div class="review-info">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Lucas Ferreira" class="profile-img">
+                        <div class="review-title">
+                            <h3>Lucas Ferreira</h3>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                     <p class="comment">"Internet muito rápida e estável! Suporte excelente."</p>
                 </div>
                 <div class="review">
-                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Mariana Souza" class="profile-img">
-                    <h3>Mariana Souza</h3>
-                    <div class="stars">★★★★☆</div>
+                    
+                    <div class="review-info">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Mariana Souza" class="profile-img">
+                       <div class="review-title">
+                        <h3>Mariana Souza</h3>
+                        <div class="stars">★★★★☆</div>
+                       </div>
+                    
+                    </div>
                     <p class="comment">"Ótimo atendimento e planos acessíveis. Recomendo!"</p>
                 </div>
                 <div class="review">
+                    
+                   <div class="review-info">
                     <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Rafael Mendes" class="profile-img">
-                    <h3>Rafael Mendes</h3>
-                    <div class="stars">★★★★★</div>
-                    <p class="comment">"Instalação foi super rápida e a conexão é incrível!"</p>
+                    <div class="review-title">
+                        <h3>Rafael Mendes</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    
+                   </div>
+                   <p class="comment">"Instalação foi super rápida e a conexão é incrível!"</p>
                 </div>
                 <div class="review">
-                    <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Ana Clara" class="profile-img">
-                    <h3>Ana Clara</h3>
-                    <div class="stars">★★★★★</div>
+                    
+                    <div class="review-info">
+                        <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Ana Clara" class="profile-img">
+                        <div class="review-title">
+                            <h3>Ana Clara</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        
+                    </div>
                     <p class="comment">"Superou minhas expectativas! Qualidade excelente."</p>
                 </div>
                 <div class="review">
-                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Carlos Eduardo" class="profile-img">
-                    <h3>Carlos Eduardo</h3>
-                    <div class="stars">★★★★☆</div>
+                    
+                    <div class="review-info">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Carlos Eduardo" class="profile-img">
+                        <div class="review-title">
+                            <h3>Carlos Eduardo</h3>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                        
+                    </div>
                     <p class="comment">"Melhor provedor da região! Recomendo muito."</p>
                 </div>
                 <div class="review">
-                    <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Beatriz Lima" class="profile-img">
-                    <h3>Beatriz Lima</h3>
-                    <div class="stars">★★★★★</div>
+                    
+                    <div class="review-info">
+                        <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Beatriz Lima" class="profile-img">
+                        <div class="review-title">
+                            <h3>Beatriz Lima</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    
+                    </div>
                     <p class="comment">"Equipe atenciosa e serviço impecável!"</p>
                 </div>
             </div>
@@ -272,6 +308,10 @@
             <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet..." target="_blank">
                 <img width="60" height="60" src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp--v1.png" alt="whatsapp--v1"/>
             </a>
+        </div>
+        <div class="end">
+            <h3>Internet Fibra Óptica para você e toda sua família</h3>
+            <em>2025 - Soares Fibra - Todos os direitos reservados.</em>
         </div>
     </section>
     <a href="https://wa.me/5531991233078?text=Ola,%20gostaria%20de%20contratar%20um%20plano%20de internet..." class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">

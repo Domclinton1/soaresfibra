@@ -185,11 +185,7 @@ header section {
     padding-bottom: 0.5rem;
     font-size: 2.3rem;
 }
-.icons img {
-    margin: 1rem;
-    cursor: pointer;
 
-}
 .icons img:hover {
     width: 40px;
     height: 40px;
@@ -206,6 +202,7 @@ header section {
     display: inline-flex;
     gap: 2rem;
     align-items: center;
+    text-align: center;
     font-weight: 600;
     
 }
@@ -355,7 +352,28 @@ header section {
     min-width: 100%;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
 }
+.review p {
+    font-size: 2rem;
+}
+.review-info {
+    display: flex;
+    font-size: 20px;
+}
+
+.review-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
 .profile-img {
     width: 80px;
     height: 80px;
@@ -365,7 +383,7 @@ header section {
 }
 .stars {
     color: #facc15;
-    font-size: 20px;
+    font-size: 30px;
 }
 .comment {
     margin-top: 10px;
@@ -384,16 +402,19 @@ header section {
 .faq h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 3rem;
+    color: #004aad;
 }
 .faq-item {
     margin-bottom: 15px;
 }
 .faq-item h3 {
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin: 0;
     padding: 10px;
-    background: #ddd;
+    background: #0073CF;
+    color: white;
     border-radius: 5px;
 }
 .faq-item p {
@@ -402,6 +423,7 @@ header section {
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
+    font-size: 18px;
 }
 .address {
     display: flex;
@@ -452,6 +474,10 @@ header section {
 }
 .address-boxwhite p {
     font-size: 1.5rem;
+}
+.end {
+    color: white;
+    font-size: 20px;
 }
 .btn-whatsapp{
     position: fixed;
@@ -669,7 +695,7 @@ header section {
         max-width: 430px;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        
 
     }
     .quote {
@@ -746,5 +772,41 @@ header section {
         width: 60px;
         height: 60px;
     }
+    .comentarios-section {
+        max-width: 430px;
+        width: 100%;
+    }
+    .comentarios-section h2 {
+        text-align: center;
+    }
+    .review {
+        min-width: 100%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: left;
+    }
+    .review p {
+        font-size: 2rem;
+    }
+    .review-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        font-size: 20px;
+    }
+    
+    .review-title {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 2rem;
+        
+    }
+    
    
 }
