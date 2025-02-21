@@ -3,7 +3,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
 
     const name = document.getElementById('name').value.trim();
     const region = document.getElementById('region').value;
-    const message = document.getElementById('message').value.trim();
+    const cep = document.getElementById('cep').value.trim();
 
     // Números de WhatsApp para cada região (substitua pelos números reais)
     const contacts = {
@@ -14,7 +14,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
 
     if (region && contacts[region]) {
       const phoneNumber = contacts[region];
-      const fullMessage = `Olá, meu nome é ${name}. ${message}`;
+      const fullMessage = `Olá, meu nome é ${name}. Meu Cep é ${cep}, gostaria de contratar um plano de internet...`;
 
       // Cria o link do WhatsApp com a mensagem formatada
       const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
@@ -25,6 +25,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
       alert('Por favor, selecione sua região.');
     }
   });
+  
 
 
 

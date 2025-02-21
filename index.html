@@ -90,7 +90,7 @@
                   <input type="text" id="name" placeholder="Digite seu nome" required>
                   
                   <label for="cep">CEP:</label>
-                  <input type="number" id="cep" placeholder="Insira Seu CEP" required>
+                  <input type="text" id="cep" placeholder="Insira Seu CEP" required maxlength="9">
 
                   <label for="region">Sua Região:</label>
                   <select id="region" required>
@@ -324,5 +324,16 @@
         <span class="tooltip-text">Contrate seu plano</span>
     </a>
     <script src="./script.js"></script>
+    <script>
+        document.getElementById("cep").addEventListener("input", function (event) {
+            let cep = this.value.replace(/\D/g, ""); // Remove tudo que não for número
+        
+            if (cep.length > 5) {
+                cep = cep.substring(0, 5) + "-" + cep.substring(5, 8);
+            }
+        
+            this.value = cep;
+        });
+        </script>
 </body>
 </html>
