@@ -190,8 +190,8 @@ header section {
 }
 
 .navbar a:hover {
-    color: red;
-    border-bottom: 0.1rem solid var --main-color;
+    color: #25d366;
+    border-bottom: 0.1rem solid white;
     padding-bottom: 0.5rem;
     font-size: 2.3rem;
 }
@@ -457,7 +457,7 @@ header section {
     padding: 1rem;
 }
 .footer .share img:hover {
-    background-color: red;
+    background-color: #25d366;
 }
 
 .address {
@@ -512,7 +512,7 @@ header section {
     padding: 6px;
     border-radius: 8px;
     text-align: center;
-    background-color: red;
+    background-color: #25d366;
     color: #fff;
     opacity: 0;
     transition: opacity 0.4s;
