@@ -528,6 +528,7 @@ header section {
     
     header {
         max-width: 430px;
+        min-width: 360px;
         width: 100%;
     }
     body {
@@ -784,6 +785,634 @@ header section {
     }
     .comentarios-section {
         max-width: 430px;
+        width: 100%;
+    }
+    .comentarios-section h2 {
+        text-align: center;
+    }
+    .review {
+        min-width: 100%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: left;
+    }
+    .review p {
+        font-size: 2rem;
+    }
+    .review-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        font-size: 20px;
+    }
+    
+    .review-title {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 2rem;
+        
+    }
+    
+   
+}
+@media  screen and (min-width:430px) and (max-width: 550px) {
+    
+    header {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+    }
+    body {
+        max-width: 550px;
+        min-width: 430px;
+        min-width: 360px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        max-width: 550px;
+        min-width: 430px;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+    .bg-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .plano-1 h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .plano-1 .btn {
+        font-size: 0.5rem;
+        background-color: #004aad;
+
+        font-weight: 500;
+    }
+    .plano-1 .btn:hover {
+        letter-spacing: 1rem;
+    }
+    .planos-box {
+        width: 100%;
+        height: 100%;
+    }
+    .planos-ofertas {
+        align-items: center;
+        justify-content: center;
+    }
+    .planos-ofertas .box .price {
+        width: 100%;
+        font-size: 12px;
+        
+    }
+    .planos-ofertas .box .price span {
+        text-decoration: line-through;
+    }
+    .home-container .btn {
+        transition: 0.5s ease-in-out;
+        font-size: 1.5rem;
+    }
+    .home-container .btn:hover {
+        letter-spacing: 0.5rem;
+    }
+    .home-container {
+        background-image: url(./assets/images/bg-cell.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .home-container section {
+        
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+    .home-container section .content {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container section .content h3 {
+        font-size: 2.8rem;
+        text-align: center;
+        text-shadow: 5px 5px 5px black;
+    }
+    .home-container section .content p {
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px black;
+    }
+    .home-container section .form-container {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+   
+    .home-container section .form-container form {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .form-container h2 {
+        font-size: 2rem;
+    }
+    
+    .home-container section .form-container form input {
+        width: 80%;
+    }
+    form .btn {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+    .about {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        width: 100%;
+    }
+    .row .container-image {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .row .container-image img {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .box-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        align-items: center;
+    }
+    .menu .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        display: flex;
+        
+
+    }
+    .quote {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .user {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .review .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+    }
+    .review .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+    }
+    .address {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./assets/images/bg-cell.png);
+        background-attachment: fixed;
+    }
+    .address h2 {
+        color: white;
+        text-shadow: 5px 5px 5px black;
+    }
+    .address-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .address-boxwhite {
+        min-width: 300px;
+        max-width: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-boxwhite .btn {
+        width: 80%;
+        text-align: center;
+    }
+    footer {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+    }
+    .share {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+        
+    }
+    .share a {
+        width: 100%;
+    }
+    .share a img {
+        width: 60px;
+        height: 60px;
+    }
+    .comentarios-section {
+        max-width: 550px;
+        min-width: 430px;
+        width: 100%;
+    }
+    .comentarios-section h2 {
+        text-align: center;
+    }
+    .review {
+        min-width: 100%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: left;
+    }
+    .review p {
+        font-size: 2rem;
+    }
+    .review-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        font-size: 20px;
+    }
+    
+    .review-title {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 2rem;
+        
+    }
+    
+   
+}
+@media  screen and (min-width:550px) and (max-width: 768px) {
+    
+    header {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+    }
+    body {
+        max-width:768px;
+        min-width: 550px;
+        min-width: 360px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        max-width:768px;
+        min-width: 550px;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+    .bg-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .plano-1 h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .plano-1 .btn {
+        font-size: 0.5rem;
+        background-color: #004aad;
+
+        font-weight: 500;
+    }
+    .plano-1 .btn:hover {
+        letter-spacing: 1rem;
+    }
+    .planos-box {
+        width: 100%;
+        height: 100%;
+    }
+    .planos-ofertas {
+        align-items: center;
+        justify-content: center;
+    }
+    .planos-ofertas .box .price {
+        width: 100%;
+        font-size: 12px;
+        
+    }
+    .planos-ofertas .box .price span {
+        text-decoration: line-through;
+    }
+    .home-container .btn {
+        transition: 0.5s ease-in-out;
+        font-size: 1.5rem;
+    }
+    .home-container .btn:hover {
+        letter-spacing: 0.5rem;
+    }
+    .home-container {
+        background-image: url(./assets/images/bg-cell.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .home-container section {
+        
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+    .home-container section .content {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container section .content h3 {
+        font-size: 2.8rem;
+        text-align: center;
+        text-shadow: 5px 5px 5px black;
+    }
+    .home-container section .content p {
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px black;
+    }
+    .home-container section .form-container {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+   
+    .home-container section .form-container form {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .form-container h2 {
+        font-size: 2rem;
+    }
+    
+    .home-container section .form-container form input {
+        width: 80%;
+    }
+    form .btn {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+    .about {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        width: 100%;
+    }
+    .row .container-image {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .row .container-image img {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .box-container {
+        display: grid;
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        align-items: stretch;
+    }
+    .menu .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .review {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        
+
+    }
+    .quote {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .user {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .review .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+    }
+    .review .box-container .box {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+    }
+    .address {
+        display: flex;
+        flex-direction: column;
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./assets/images/bg-cell.png);
+        background-attachment: fixed;
+    }
+    .address h2 {
+        color: white;
+        text-shadow: 5px 5px 5px black;
+    }
+    .address-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .address-boxwhite {
+        min-width: 300px;
+        max-width: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .address-boxwhite .btn {
+        width: 80%;
+        text-align: center;
+    }
+    footer {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+    }
+    .share {
+        max-width:768px;
+        min-width: 550px;
+        width: 100%;
+        
+    }
+    .share a {
+        width: 100%;
+    }
+    .share a img {
+        width: 60px;
+        height: 60px;
+    }
+    .comentarios-section {
+        max-width:768px;
+        min-width: 550px;
         width: 100%;
     }
     .comentarios-section h2 {
