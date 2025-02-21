@@ -144,3 +144,31 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+
+
+const reviews = [
+    { name: "Lucas Ferreira", rating: "★★★★★", comment: "Internet muito rápida e estável! Suporte excelente." },
+    { name: "Mariana Souza", rating: "★★★★☆", comment: "Ótimo atendimento e planos acessíveis. Recomendo!" },
+    { name: "Rafael Mendes", rating: "★★★★★", comment: "Instalação foi super rápida e a conexão é incrível!" }
+];
+
+
+let index = 0;
+    function updateReview() {
+        index = (index + 1) % 6;
+        document.getElementById("reviewWrapper").style.transform = `translateX(-${index * 100}%)`;
+    }
+setInterval(updateReview, 4000);
+
+function toggleAnswer(element) {
+    let answer = element.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+}
+  
+
+

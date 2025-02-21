@@ -196,13 +196,22 @@ header section {
 }
 
 .btn {
-    background: red;
+    background: #25d366;
+    border-radius: 12px;
     color: #fff;
     padding: 1rem 3rem;
     font-size: 1.7rem;
     cursor: pointer;
     margin-top: 1rem;
-    display: inline-block;
+    display: inline-flex;
+    gap: 2rem;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.btn img {
+    fill: white;
+    filter: invert(1)
 }
 
 .btn:hover {
@@ -227,7 +236,7 @@ header section {
     max-width: 60rem;
 
 }
-.content h3 {
+.content h3, .content h1 {
     color: #fff;
     font-size: 6rem;
 }
@@ -317,37 +326,83 @@ header section {
     text-decoration: line-through;
     font-weight: lighter;
 }
-.review .box-container {
+
+.comentarios-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
-.review .box-container .box h3 {
-    color: #fff;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-
+.comentarios-section h2 {
+    font-size: 5rem;
+    color: white;
 }
-.review .box-container .box {
-    border: var(--border);
+.carousel {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 20px;
+}
+.review-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.review {
+    min-width: 100%;
     text-align: center;
-    padding: 3rem 2rem;
-    
+    padding: 20px;
 }
-.review .box-container .box p {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 2rem 0;
-    line-height: 1.8;
-    font-weight: lighter;
-}
-.review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
+.profile-img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
-
-
+.stars {
+    color: #facc15;
+    font-size: 20px;
+}
+.comment {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+}
+.faq {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-item h3 {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+.faq-item p {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
 .address {
     display: flex;
     flex-direction: column;
