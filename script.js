@@ -102,7 +102,7 @@ style.innerHTML = `
         display: none;
         font-size: 30px;
         cursor: pointer;
-        color: red;
+        color: #25d366;
     }
     
     @media (max-width: 768px) {
