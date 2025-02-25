@@ -46,6 +46,26 @@
     gtag('config', 'AW-16893089825');
     </script>
 
+    <!-- Event snippet for Solicitar cotação conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16893089825/mOahCKGKqaIaEKGwoPc-',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_callback': callback
+        });
+        return false;
+        }
+        </script>
+    
+
 
     <!-- Meta Pixel Code -->
     <script>
@@ -89,7 +109,7 @@
                 <h1>Internet Fibra Óptica Ultraveloz a Partir de 400 MEGA por <strong style="color: #00fca1">R$ 99,99/mês</strong> – Modem e Instalação Grátis!</h1>
                 
                 <P>Navegue na Internet, Assista filmes sem travar e jogue sem travar com + Velocidade e + Conectividade em Belo Horizonte e Minas Gerais</P>
-                <a class="btn" href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet...
+                <a class="btn" onclick="gtag_report_conversion()" href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet...
                 " target="_blank">Fale Agora e Instale Hoje! <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
                 
             </div>
@@ -112,7 +132,7 @@
               
                  
               
-                  <button class="btn" type="submit">Enviar pelo WhatsApp <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></button>
+                  <button class="btn" onclick="gtag_report_conversion()" type="submit">Enviar pelo WhatsApp <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></button>
                 </form>
               </div>
         </section>
@@ -143,7 +163,7 @@
                 <span>🔒 Segurança Garantida</span>
                 <p>Navegue com tranquilidade! Oferecemos tecnologia de ponta para manter sua conexão segura.</p>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet...
-                " target="_blank" class="btn">Fale Conosco  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
+                " target="_blank" onclick="gtag_report_conversion()" class="btn">Fale Conosco  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
             </div>
         </div>
     </section>
@@ -158,7 +178,7 @@
                     R$ 99,99 <span>R$ 124,99</span>
                 </div>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet%20de 400 MEGA...
-                " target="_blank" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
+                " target="_blank" onclick="gtag_report_conversion()" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
             </div>
             <div class="box">
                 <img src="./assets/images/wifi.svg" alt="Icone de WiFi">
@@ -167,7 +187,7 @@
                     R$ 109,99 <span>R$ 134,99</span>
                 </div>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet%20de 600 MEGA...
-                " target="_blank" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
+                " target="_blank" onclick="gtag_report_conversion()" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
             </div>
             <div class="box">
                 <img src="./assets/images/wifi.svg" alt="Icone de WiFi">
@@ -176,7 +196,7 @@
                     R$ 119,99 <span>R$ 144,99</span>
                 </div>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet%20de 600 MEGA + MAX...
-                " target="_blank" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
+                " target="_blank" onclick="gtag_report_conversion()" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
             </div>
             <div class="box">
                 <img src="./assets/images/wifi.svg" alt="Icone de WiFi">
@@ -185,7 +205,7 @@
                     R$ 119,99 <span>R$ 144,99</span>
                 </div>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet%20de 600 MEGA + Paramount...
-                " target="_blank" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
+                " target="_blank" onclick="gtag_report_conversion()" class="btn">Quero Esse Plano  <img src="./assets/images/whatsapp.svg" alt="Icone do Whatsapp"></a>
             </div>
             
         </div>
@@ -295,7 +315,7 @@
                     Levamos a melhor internet para todos os bairros de Belo Horizonte
                 </p>
                 <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet...
-                " target="_blank" class="btn">Entrar em contato</a>
+                " target="_blank" class="btn" onclick="gtag_report_conversion()">Entrar em contato</a>
             </div>
             <div class="address-boxwhite">
                 <h3>Grande BH</h3>
@@ -320,7 +340,7 @@
                 <img width="60" height="60" src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="facebook-new"/>
             </a>
 
-            <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet..." target="_blank">
+            <a href="https://wa.me/5531991233078?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano%20de%20internet..." onclick="gtag_report_conversion()" target="_blank">
                 <img width="60" height="60" src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp--v1.png" alt="whatsapp--v1"/>
             </a>
         </div>
@@ -329,7 +349,7 @@
             <em>2025 - Soares Fibra - Todos os direitos reservados.</em>
         </div>
     </section>
-    <a href="https://wa.me/5531991233078?text=Ola,%20gostaria%20de%20contratar%20um%20plano%20de internet..." class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+    <a href="https://wa.me/5531991233078?text=Ola,%20gostaria%20de%20contratar%20um%20plano%20de internet..." class="btn-whatsapp" onclick="gtag_report_conversion()" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
         <img src="assets/images/whatssapp.svg" alt="Botão whatsapp">
         <span class="tooltip-text">Contrate seu plano</span>
     </a>
