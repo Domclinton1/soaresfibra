@@ -27,9 +27,11 @@ html {
     scroll-behavior: smooth;
 }
 .bg-container {
-    background-image: url(./assets/images/bg-banner.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) ,  
+                    url(./assets/images/bg-cell.png);
+
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
     padding: 40px;
     display: flex;
     gap: 5rem;
@@ -239,10 +241,13 @@ header section {
 }
 
 .home-container {
-    background-image: url(./assets/images/bg-banner.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) ,  
+    url(./assets/images/bg-cell.png);
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     height: 100vh;
-    background-size: cover;
+    background-size: 100%;
 }
 .home-container section {
     display: flex;
